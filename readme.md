@@ -5,3 +5,4 @@ season1
 - Chanmin Kim (Master candidate in AI)
 - Gyunghee Lee (Master candidate in CS)
 - Seunghyun Kim (Bachelor in CS)
+- Cookie
