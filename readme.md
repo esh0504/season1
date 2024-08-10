@@ -6,4 +6,4 @@ season1
 - Gyunghee Lee (Master candidate in CS)
 - Seunghyun Kim (Bachelor in CS)
 - Cookie (Baby in Cookie World)
-- Cake
+- Cake!!!
