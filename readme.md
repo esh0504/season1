@@ -4,4 +4,4 @@ season1
 - Seungho Eum (Ph.d Student in CS)
 - Chanmin Kim (Master candidate in AI)
 - Gyunghee Lee (Master candidate in CS)
-- Senghyun Kim (Bachelor in CS)
+- Seunghyun Kim (Bachelor in CS)
