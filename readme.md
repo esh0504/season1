@@ -1,2 +1,7 @@
 season1
-/test
+
+# Member
+Seungho Eum
+Chanmin Kim
+Senghyun Kim
+Gyunghee Lee
