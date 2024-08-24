@@ -1,0 +1,53 @@
+from collections import deque
+
+def check_diff(src, des):
+    cnt = 0
+    for i in range(len(src)):
+        if src[i] != des[i]:
+            cnt += 1
+        if cnt >= 2:
+            return False
+    return True
+
+def change_dict(words):
+    word_dict = {}
+    for src in words:
+
+        tmp_lst = []
+        for des in words:
+            if src == des:
+                continue
+            if check_diff(src, des):
+                tmp_lst.append(des)
+        word_dict[src] = tmp_lst
+    return word_dict
+
+def bfs(word_dict, begin, target):
+    q = deque()
+    q.append((begin, 0))
+    visited = []
+    visited.append(begin)
+    while q:
+        
+        curr_word, cnt = q.popleft()
+
+        for next_word in word_dict[curr_word]:
+            if next_word == target:
+                return cnt + 1
+            elif next_word not in visited:
+                visited.append(next_word)
+                q.append((next_word, cnt + 1))
+    return 0
+
+def solution(begin, target, words):
+    all_words = words
+    all_words.append(begin)
+    words_dict = change_dict(all_words)
+    answer = bfs(words_dict, begin, target)
+    return answer
+
+if __name__=='__main__':
+    begin = 'hit'
+    target = 'cog'
+    words = ["hot", "dot", "dog", "lot", "log", "cog"]
+    solution(begin, target, words)

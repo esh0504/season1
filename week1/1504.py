@@ -54,7 +54,7 @@ if __name__ == '__main__':
     Dijkstra_v1 = dijkstra(v1-1)
     Dijkstra_v2 = dijkstra(v2-1)
 
-    answer = min(Dijkstra_v1[v2-1] + Dijkstra_start[v1-1] + Dijkstra_v2[n-1], Dijkstra_v1[v1-1] + Dijkstra_start[v2-1] + Dijkstra_v1[n-1])
+    answer = min(Dijkstra_v1[v2-1] + Dijkstra_start[v1-1] + Dijkstra_v2[n-1], Dijkstra_v2[v1-1] + Dijkstra_start[v2-1] + Dijkstra_v1[n-1])
 
     if v1 == 1 or v2 == n:
         if v1 == 1 and v2 == n:
